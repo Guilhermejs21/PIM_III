@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar - LuminaTech</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topo" id="topo"></header>
+  <main id="conteudo" class="principal">
+    <section class="heroi">
+      <h1>Avalie, acompanhe e apoie a aprendizagem</h1>
+      <p class="heroi-texto">Questionários de múltipla escolha, respostas registradas e relatórios de desempenho para alunos, professores e administradores.</p>
+    </section>
+    <section class="grade grade-2">
+      <div class="cartao formulario-cartao">
+        <h2>Entrar</h2>
+        <form id="form-login" novalidate>
+          <div class="alerta alerta-erro" id="erro" role="alert" hidden></div>
+          <div class="campo"><label for="email">E-mail</label><input id="email" type="email" autocomplete="email" required></div>
+          <div class="campo"><label for="senha">Senha</label><input id="senha" type="password" autocomplete="current-password" required></div>
+          <button type="submit" class="btn btn-bloco">Entrar</button>
+        </form>
+        <p class="texto-suave rodape-form">Ainda não tem conta de aluno? <a href="cadastro.html">Criar conta</a></p>
+      </div>
+      <div class="cartao">
+        <h2>Contas de demonstração</h2>
+        <p class="texto-suave">Senha de todas: <strong>123456</strong>. Escolha um perfil para preencher o formulário.</p>
+        <div class="demo-lista">
+          <button type="button" class="btn btn-contorno" data-demo="demo@luminatech.com">Aluno (sem histórico)</button>
+          <button type="button" class="btn btn-contorno" data-demo="ana@luminatech.com">Aluna Ana (com histórico)</button>
+          <button type="button" class="btn btn-contorno" data-demo="professor@luminatech.com">Professor</button>
+          <button type="button" class="btn btn-contorno" data-demo="admin@luminatech.com">Administrador</button>
+        </div>
+        <p class="nota-demo">Os dados ficam só neste navegador (localStorage). <button type="button" class="link-botao" id="btn-restaurar">Restaurar dados de demonstração</button></p>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape" id="rodape"></footer>
+  <script src="js/armazenamento.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criar conta - LuminaTech</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topo" id="topo"></header>
+  <main id="conteudo" class="principal">
+    <section class="cartao formulario-cartao">
+      <h1>Crie sua conta de aluno</h1>
+      <p class="texto-suave">Coletamos apenas o necessário: nome, e-mail e senha.</p>
+      <form id="form-cadastro" novalidate>
+        <div class="alerta alerta-erro" id="erro" role="alert" hidden></div>
+        <div class="campo"><label for="nome">Nome</label><input id="nome" type="text" autocomplete="name" required></div>
+        <div class="campo"><label for="email">E-mail</label><input id="email" type="email" autocomplete="email" required></div>
+        <div class="campo"><label for="senha">Senha (mínimo 6 caracteres)</label><input id="senha" type="password" autocomplete="new-password" required></div>
+        <div class="campo"><label for="confirmar">Confirmar senha</label><input id="confirmar" type="password" autocomplete="new-password" required></div>
+        <button type="submit" class="btn btn-bloco">Criar conta</button>
+      </form>
+      <p class="texto-suave rodape-form">Já tem conta? <a href="index.html">Entrar</a></p>
+    </section>
+  </main>
+  <footer class="rodape" id="rodape"></footer>
+  <script src="js/armazenamento.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/cadastro.js"></script>
+</body>
+</html>

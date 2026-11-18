@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novo questionário - LuminaTech</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topo" id="topo"></header>
+  <main id="conteudo" class="principal">
+    <header class="cabecalho-pagina"><h1>Novo questionário</h1><p class="texto-suave">Questões de múltipla escolha com quatro alternativas e uma correta.</p></header>
+    <form id="form-questionario" novalidate>
+      <section class="cartao">
+        <div class="campo"><label for="titulo">Título</label><input id="titulo" type="text"></div>
+        <div class="campo"><label for="curso">Curso</label><select id="curso"></select></div>
+        <div class="campo"><label for="descricao">Descrição (opcional)</label><textarea id="descricao" rows="2"></textarea></div>
+      </section>
+      <div id="lista-questoes"></div>
+      <div class="acoes"><button type="button" class="btn btn-contorno" id="add-questao">Adicionar questão</button></div>
+      <div class="alerta alerta-erro" id="erro" role="alert" hidden></div>
+      <div class="acoes">
+        <button type="submit" class="btn btn-grande" value="aplicado">Salvar e aplicar aos alunos</button>
+        <button type="submit" class="btn btn-contorno btn-grande" value="rascunho">Salvar como rascunho</button>
+        <a class="btn btn-contorno btn-grande" href="professor.html">Cancelar</a>
+      </div>
+    </form>
+  </main>
+  <footer class="rodape" id="rodape"></footer>
+  <script src="js/armazenamento.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/questionario-novo.js"></script>
+</body>
+</html>
